@@ -1,6 +1,6 @@
 import React from "react";
 
-function Controls({henry,gp,bottle,setBottle,rules,startPosition}){
+function Controls({henry,bottle,rules}){
 
     function roll(){
         if(rules.turn==='henry'){
