@@ -1,0 +1,161 @@
+.Board{
+    position: absolute;
+    border: 1px solid #868686;
+    border-right: 0px;
+    border-bottom: 0px;
+    width: calc(1260px + 30px);/*30 x 42 = 1260 (I added 30 more for the lables/axis). The test instructions are wrong by 20px here: 1280x720*/
+    height: calc(720px + 30px);
+}
+
+.Cell {
+    position: absolute;
+    width: 29px;/*plus border right of 1 = 30px*/
+    height: 29px;/*plus border bottom of 1 = 30px*/
+    border: 1px solid #868686;
+    border-left: 0px;
+    border-top: 0px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+}
+
+.henry {
+    background: blue;
+}
+
+.gp {
+    background: red;
+}
+
+.bottle {
+    background: black;
+}
+
+.Title {
+    display: inline-block;
+    margin-top: 0px;
+    color: #8b8b8b;
+}
+
+.Dice1 {
+    display: inline-block;
+    padding: 10px;
+    margin-right:10px;
+    background-color: #ffffff;
+    min-width: 148px;
+}
+
+.Dice2 {
+    display: inline-block;
+    padding: 10px;
+    margin-right:10px;
+    background-color: #ffffff;
+}
+
+.Roll {
+    display: inline-block;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #000000;
+    border: 0;
+    border-radius: 3px;
+    height: 24px;
+    padding: 20px;
+    line-height: 5px;
+    cursor: pointer;
+}
+
+.headerWrapper {
+    width: 1291px;
+    height: 30px;
+    padding: 30px;
+    margin: 10px auto;
+}
+
+.gameWrapper {
+    background: #ffffff;
+    width: 1292px;
+    height: 752px;
+    padding: 30px;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.legendWrapper {
+    width: 1291px;
+    height: 150px;
+    padding: 30px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.right {
+    float: right;
+}
+
+.box {
+    display: inline-block;
+    border: 3px solid #5c5c5c;
+    padding: 3px;
+    margin: 0 3px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    min-width: 24px;
+    text-align: center;
+}
+
+.Legend {
+    background: #ffffff;
+    width: 980px;
+    height: 60px;
+    padding: 30px;
+    margin: 10px auto;
+    border-radius: 20px;
+    position: absolute;
+    left: 30px;
+}
+
+.Legend > div:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.square {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    top: 2px;
+    position: relative;
+}
+
+.fourty {
+    display: inline-block;
+    width: 45%
+}
+
+.sixty {
+    display: inline-block;
+    width: 55%
+}
+
+.sixty > tbody > tr > td {
+    width: 129px;
+}
+
+.Restart {
+    display: inline-block;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #23c90d;
+    border: 0;
+    border-radius: 3px;
+    height: 24px;
+    padding: 20px;
+    line-height: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 90px;
+    width: 120px;
+    bottom: calc(50% - 24px);
+}

@@ -1,4 +1,6 @@
-TECH-TheLastBottle-codingchallenge-v2-211222-1359
+
+
+
 # The Last Bottle - React App
 
 **See a working version here: [demo](https://faucex.cc/the-last-bottle/index.html)**
