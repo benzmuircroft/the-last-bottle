@@ -210,7 +210,8 @@ function App(){
         pnum: 0,
         turn: 'henry',
         blocked: 'none',
-        restart: false
+        restart: false,
+        buttons: true
         });
 
     //these can change without re-render
@@ -229,9 +230,13 @@ function App(){
             pnum: move.pnum,
             turn: 'bottle',
             blocked: move.block,
-            restart: false
+            restart: false,
+            buttons: false
             });
         if(checkWinner(gp.current,henry.current)){alert('Henry wins!');}
+        else{
+            setTimeout(bottle.trigger,2000);
+            }
         };
 
     bottle.trigger=function(obj){//trigger setReducer to update the ui
@@ -243,7 +248,8 @@ function App(){
             pnum: move.pnum,
             turn: 'henry',
             blocked: move.block,
-            restart: false
+            restart: false,
+            buttons: true
             });
             if(checkWinner(gp.current,bottle.current)){alert('Henry Looses!');}
         };
@@ -293,7 +299,7 @@ function App(){
                         </tbody>
                     </table>
                 </div>
-                <input className="Restart" type="button" onClick={
+                <input className={"Restart"+(rules.buttons?"":" disabled")} type="button" onClick={
                 ()=>{
                     gp.current=getZone(startPosition());
                     henry.current=noColide(gp.current);
@@ -304,7 +310,8 @@ function App(){
                         pnum: 0,
                         turn: 'henry',
                         blocked: 'none',
-                        restart: true})
+                        restart: true,
+                        buttons: true})
                         }
                     } 
                 value="START"/>
