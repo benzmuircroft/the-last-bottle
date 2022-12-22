@@ -159,3 +159,8 @@
     width: 120px;
     bottom: calc(50% - 24px);
 }
+
+.disabled {
+    pointer-events: none!important;
+    background-color: #626262!important;
+}
