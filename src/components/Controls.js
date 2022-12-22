@@ -4,10 +4,10 @@ function Controls({henry,bottle,rules}){
 
     function roll(){
         if(rules.turn==='henry'){
-            henry.trigger({});
+            henry.trigger();
             }
         else{
-            bottle.trigger({});
+            bottle.trigger();
             }
         }
 
@@ -17,7 +17,7 @@ function Controls({henry,bottle,rules}){
             <div className="right">
                 <div className="Dice1">Direction: <div className="box">{rules.dnum}</div> {rules.dir.toUpperCase()}</div>
                 <div className="Dice2">Steps: <div className="box">{rules.pnum}</div> </div>
-                <input className="Roll" type="button" onClick={roll} value="ROLL"/>
+                <input className={"Roll"+(rules.buttons?"":" disabled")} type="button" onClick={roll} value="ROLL"/>
             </div>
         </div>
     );
