@@ -3,7 +3,7 @@
 
 # The Last Bottle - React App
 
-**See a working version here: [demo](https://faucex.cc/the-last-bottle/index.html)**
+# **See a working version here: [demo](https://faucex.cc/the-last-bottle/index.html)**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
